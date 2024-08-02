@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Movie</title>
+    <link rel="icon" href="/images/icono.jpg" type="image/x-icon">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+
+</head>
+<body>
+    <header class="p-3 mb-3 border-bottom">
+        <div class="container">
+          <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+            <img src="../images/logo.png" style="width: 140px; margin-right: 100px; margin-top: 10px;" alt="logo de la pagina">
+  
+    
+            <div class="ms-auto">
+              <a href="index.html"><button id="logear" type="button" class="btn btn-outline-primary">Volver al dashboard</button></a>
+          </div>
+        </div>
+    </header>
+    <div class="container px-5 my-5">
+        <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+            <div class="mb-3">
+                <label class="form-label" for="nombreDeLaPelicula">Nombre de la película</label>
+                <input class="form-control" id="nombreDeLaPelicula" type="text" placeholder="Nombre de la pelicula" data-sb-validations="required" />
+                <div class="invalid-feedback" data-sb-feedback="nombreDeLaPelicula:required">Nombre de la película is required.</div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="urlDelTrailer">URL del trailer</label>
+                <input class="form-control" id="urlDelTrailer" type="text" placeholder="URL del trailer" data-sb-validations="required" />
+                <div class="invalid-feedback" data-sb-feedback="urlDelTrailer:required">URL del trailer is required.</div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="miniatura">Miniatura</label>
+                <input class="form-control" id="miniatura" type="file" placeholder="Miniatura" data-sb-validations="required" />
+                <div class="invalid-feedback" data-sb-feedback="miniatura:required">Miniatura is required.</div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="Poster">Poster</label>
+                <input class="form-control" id="Poster" type="file" placeholder="Poster" data-sb-validations="required" />
+                <div class="invalid-feedback" data-sb-feedback="Poster:required">Poster is required.</div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="duracion">Duración</label>
+                <input class="form-control" id="duracion" type="text" placeholder="Duracion" data-sb-validations="required" />
+                <div class="invalid-feedback" data-sb-feedback="duracion:required">Duración is required.</div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="descripcionDeLaPelicula">Descripción de la pelicula</label>
+                <textarea class="form-control" id="descripcionDeLaPelicula" type="text" placeholder="Descripcion de la pelicula" style="height: 10rem;" data-sb-validations="required"></textarea>
+                <div class="invalid-feedback" data-sb-feedback="descripcionDeLaPelicula:required">Descripcion de la pelicula is required.</div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="descripcionCortaDeLaPelicula">Descripción corta de la película</label>
+                <textarea class="form-control" id="descripcionCortaDeLaPelicula" type="text" placeholder="Descripcion corta de la pelicula" style="height: 10rem;" data-sb-validations="required"></textarea>
+                <div class="invalid-feedback" data-sb-feedback="descripcionCortaDeLaPelicula:required">Descripcion corta de la película is required.</div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="generos">Generos</label>
+                <select class="form-select" id="generos" aria-label="Generos">
+                    <option value=""></option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="actores">Actores</label>
+                <select class="form-select" id="actores" aria-label="Actores">
+                    <option value=""></option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="Estudio">Estudio</label>
+                <select class="form-select" id="Estudio" aria-label="Estudio">
+                    <option value=""></option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="añoDePublicacion">Año de publicación</label>
+                <input class="form-control" id="añoDePublicacion" type="number" placeholder="Año de publicacion" data-sb-validations="required" />
+                <div class="invalid-feedback" data-sb-feedback="añoDePublicacion:required">Año de publicación is required.</div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label d-block">Rating</label>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" id="1" type="radio" name="rating" data-sb-validations="" />
+                    <label class="form-check-label" for="1">1</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" id="2" type="radio" name="rating" data-sb-validations="" />
+                    <label class="form-check-label" for="2">2</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" id="3" type="radio" name="rating" data-sb-validations="" />
+                    <label class="form-check-label" for="3">3</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" id="4" type="radio" name="rating" data-sb-validations="" />
+                    <label class="form-check-label" for="4">4</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" id="5" type="radio" name="rating" data-sb-validations="" />
+                    <label class="form-check-label" for="5">5</label>
+                </div>
+            </div>
+            <div class="d-none" id="submitSuccessMessage">
+                <div class="text-center mb-3">
+                    <div class="fw-bolder">Form submission successful!</div>
+                    <p>To activate this form, sign up at</p>
+                    <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+                </div>
+            </div>
+            <div class="d-none" id="submitErrorMessage">
+                <div class="text-center text-danger mb-3">Error sending message!</div>
+            </div>
+            <div class="d-grid">
+                <button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

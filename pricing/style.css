@@ -1,0 +1,55 @@
+
+#logear{
+    background-color: white;
+    border-color: rgb(102, 102, 102);
+    color: black;
+    font-weight: bold;
+}
+
+#logear:hover{
+    background-color: black;
+    border-color: black;
+    color: white;
+}
+
+#seleccionar{
+    background-color: black;
+    border-color: black;
+    color: white;
+}
+
+#seleccionar:hover{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(69,9,121,1) 0%, rgba(52,17,121,1) 36%, rgba(200,14,14,1) 90%);
+    border-color: black;
+}
+
+#precios{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(69,9,121,1) 0%, rgba(52,17,121,1) 36%, rgba(200,14,14,1) 90%);
+    color: white;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .container {
+    flex: 1; /* Ocupa el espacio disponible */
+  }
+  
+  header {
+    margin-bottom: 0;
+  }
+  
+  footer {
+    margin-top: auto; /* Empuja el footer al final de la página */
+    width: 100%;
+    background-color: rgba(219, 217, 217, 0.425);
+  }

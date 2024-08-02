@@ -1,0 +1,31 @@
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+
+.card{
+    width: 500px;
+}
+
+.col{
+    display: flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.gradient-custom{
+    background: rgb(176,20,20);
+    background: linear-gradient(0deg, rgba(176,20,20,1) 0%, rgba(0,0,0,1) 100%);
+}
+
+#boxes{
+    background-color: rgba(29, 23, 23, 0.322);
+    color: white;
+}
+
+#titulos{
+    color: rgb(168, 159, 159);
+}
