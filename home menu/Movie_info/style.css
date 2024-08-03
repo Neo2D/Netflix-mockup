@@ -1,0 +1,59 @@
+input[type="search"]::placeholder {
+  color: white;
+}
+
+footer{
+  color: rgba(255, 255, 255, 0.363) !important;
+}
+
+.bg-image {
+    background: 
+    linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5) 
+    ), 
+    url('../../images/Deadpool_y_wolverine_fondo.jpg'); 
+    background-size: cover; 
+    background-position: center top; 
+    background-repeat: no-repeat; 
+    color: white;
+    height: 70vh;
+    width: 100%; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    padding: 20px; 
+    box-sizing: border-box;
+}
+
+.text-content {
+    position: absolute;
+    left: 0;
+    top: 50%; 
+    transform: translateY(-50%); 
+    max-width: 600px;
+    padding: 20px;
+    padding-left: 50px;
+}
+
+#info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.movie-description, .movie-details {
+    padding: 15px;
+    color: white;
+    border-radius: 10px;
+}
+
+.movie-details {
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+.movie-title {
+    font-size: 2rem;
+    font-weight: bold;
+}
