@@ -14,77 +14,75 @@
 
 </head>
 <body>
-  <header class="p-3 mb-3 border-bottom">
-      <div class="container">
-          <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-              <img src="../images/logo.png" style="width: 140px; margin-right: 100px; margin-top: 10px;" alt="logo de la pagina">
-              <div class="ms-auto">
-                  <a href="../sign up/index.html"><button id="logear" type="button" class="btn btn-outline-primary">Iniciar sesión</button></a>
-              </div>
-          </div>
-      </div>
-  </header>
-
-  <div id="cuadro">
-      <div class="mx-4 mt-4 p-3">
-          <div class="row mb-n4">
-            <h2 style="text-align: center; padding-bottom: 30px;">Crea tu cuenta</h2>
-              <div class="col">
-                  <div class="cs-form">
-                      <input type="email" class="form-control" />
-                      <label>Nombre</label>
-                  </div>
-              </div>
-              <div class="col">
-                  <div class="cs-form">
-                      <input type="text" class="form-control" />
-                      <label>Apellido</label>
-                  </div>
-              </div>
-              <div class="cs-form">
-                  <input type="email" class="form-control" />
-                  <label>Correo electronico</label>
-              </div>
-              <div class="cs-form">
-                  <input type="password" class="form-control" />
-                  <label>Contraseña</label>
-              </div>
-              <p class="text-muted text-center small">Minimo de 8 caracteres</p>
-              <div class="cs-form">
-                  <input type="password" class="form-control" />
-                  <label>Confirmar contraseña</label>
-              </div>
-              <div class="cs-form">
-                  <input type="text" class="form-control" />
-                  <label>Celular</label>
-              </div>
-              <p class="text-muted text-center small">Opcional</p>
-          </div>
-          <div class="d-flex justify-content-center">
-              <a href="metodo de pago/index.html">
-                  <button class="btn btn-outline-dark my-3" id="continuar">Continuar</button>
-              </a>
-          </div>
-          <hr />
-          <p class="text-center">
-              Al clickear en <em>Continuar</em> acepta nuestros
-              <a class="text-decoration-none" href="#">terminos de servicio</a>
-          </p>
-      </div>
-  </div>
-
-  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 border-top">
-      <p class="col-md-4 mb-0 text-body-secondary px-5">©Josh 2024</p>
-      <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-          <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
-      </a>
-      <ul class="nav col px-5 justify-content-end">
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary text-decoration-underline">Privacidad</a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary text-decoration-underline">FAQ</a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary text-decoration-underline">Centro de asistencia</a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary text-decoration-underline">Terminos de uso</a></li>
-      </ul>
-  </footer>
-</body>
+    <header class="p-3 mb-3 border-bottom">
+        <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <img src="../images/logo.png" style="width: 140px; margin-right: 100px; margin-top: 10px;" alt="logo de la pagina">
+                <div class="ms-auto">
+                    <a href="../sign up/index.html"><button id="logear" type="button" class="btn btn-outline-primary">Iniciar sesión</button></a>
+                </div>
+            </div>
+        </div>
+    </header>
+  
+    <div id="cuadro" class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8 col-lg-6">
+                <h2 class="text-center mb-4">Crea tu cuenta</h2>
+                <form>
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="nombre" />
+                    </div>
+                    <div class="mb-3">
+                        <label for="apellido" class="form-label">Apellido</label>
+                        <input type="text" class="form-control" id="apellido" />
+                    </div>
+                    <div class="mb-3">
+                        <label for="correo" class="form-label">Correo electrónico</label>
+                        <input type="email" class="form-control" id="correo" />
+                    </div>
+                    <div class="mb-3">
+                        <label for="contrasena" class="form-label">Contraseña</label>
+                        <input type="password" class="form-control" id="contrasena" />
+                        <div class="form-text text-center">Mínimo de 8 caracteres</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="confirmar-contrasena" class="form-label">Confirmar contraseña</label>
+                        <input type="password" class="form-control" id="confirmar-contrasena" />
+                    </div>
+                    <div class="mb-3">
+                        <label for="celular" class="form-label">Celular</label>
+                        <input type="text" class="form-control" id="celular" />
+                        <div class="form-text text-center">Opcional</div>
+                    </div>
+                    <div class="text-center">
+                        <a href="metodo de pago/index.html">
+                            <button type="button" class="btn btn-outline-dark" id="continuar">Continuar</button>
+                        </a>
+                    </div>
+                    <hr />
+                    <p class="text-center">
+                        Al clickear en <em>Continuar</em> acepta nuestros
+                        <a class="text-decoration-none" href="#">términos de servicio</a>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
+  
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 border-top">
+        <p class="col-md-4 mb-0 text-body-secondary px-5">©Josh 2024</p>
+        <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+            <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+        </a>
+        <ul class="nav col px-5 justify-content-end">
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary text-decoration-underline">Privacidad</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary text-decoration-underline">FAQ</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary text-decoration-underline">Centro de asistencia</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary text-decoration-underline">Términos de uso</a></li>
+        </ul>
+    </footer>
+  </body>
 
 </html>
